@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="my.css">
+    
+</head>
+<body>
+    <header>
+        <div>
+            <p>My_Blog</p>
+        </div>
+        <!-- script part -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="#">Authors</a>
+                <div class="dropdown-content">
+                    <a href="#">Ruskin Bond</a>
+                    <a href="#">Prem Chand</a>
+                    <a href="#">Chaitra</a>
+                </div>
+            </div>
+            <a href="#"><button class="btn-primary">Add</button></a>
+        </nav>
+    </header>
+
+    <details>
+        <summary><strong>Index Page</strong></summary>
+        <p>This is the content that will be shown when the summary is clicked.</p>
+    </details>
+    
+
+    <!-- card wala part -->
+    <div class="card-container">
+        <div class="card">
+            <img src="#" alt="Blog1">
+            <h4>Book 1</h4>
+            <p>work for life</p>
+            <div class="price">$25.00</div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="#" alt="Blog2">
+            <h4>Book 2</h4>
+            <p>Stylish</p>
+            <div class="price">$30.00</div>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="#" alt="Blog3">
+            <h4>Book 3</h4>
+            <p>excellent </p>
+            <div class="price">$20.00</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+<br>
+<br>
+    <!-- footer wala part -->
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">C+=</a></li>
+                    <li><a href="#">Gita Press</a></li>
+                    <li><a href="#">Blogger</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">love_u</a></li>
+                    <li><a href="#">Hello</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MyWebsite. @All Rights Reserved to me only.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+                nav.style.flexDirection = 'column';
+            }
+        }
+    </script>
+</body>
+</html>
